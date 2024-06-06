@@ -1,0 +1,60 @@
+derivative single scene:
+from manim import *
+
+class DerivativeVisualization(Scene):
+    def get_tangent_line(self, axes, x_value, graph, dx=0.01, color=ORANGE):
+        x_left = x_value - dx
+        y_left = graph.underlying_function(x_left)
+        left_point = axes.c2p(x_left, y_left)
+        x_right = x_value + dx
+        y_right = graph.underlying_function(x_right)
+        right_point = axes.c2p(x_right, y_right)
+        return Line(left_point, right_point, color=color)
+
+    def construct(self):
+        title = Text('Visualization of the Derivative', font_size=24).to_edge(UP)
+        self.add(title)
+        axes = Axes(x_range=[-3, 3, 1], y_range=[-5, 5, 1], axis_config={'include_numbers': True}, tips=True)
+        graph = axes.plot(lambda x: x**2, color=BLUE, x_range=[-2, 2])
+        graph_label = axes.get_graph_label(graph, label='y = x^2').next_to(graph, UR, buff=0.5)
+        self.add(axes, graph, graph_label)
+        
+        x_value = 1
+        point_of_interest = axes.input_to_graph_point(x_value, graph)
+        dot = Dot(point=point_of_interest, color=RED)
+        dot_label = MathTex(f'x={x_value}', color=RED).next_to(dot, UP+RIGHT)
+        tangent_line = self.get_tangent_line(axes, x_value, graph, dx=0.01, color=ORANGE)
+        self.add(dot, dot_label, tangent_line)
+        
+        slope = 2 * x_value
+        slope_text = MathTex('Slope =', f'{slope}', color=ORANGE).to_corner(DL)
+        self.add(slope_text)
+
+        for new_x in [-1.5, 0, 1.5]:
+            new_point = axes.input_to_graph_point(new_x, graph)
+            new_slope = 2 * new_x
+            new_slope_text = MathTex('Slope =', f'{new_slope:.2f}', color=ORANGE)
+            dot.move_to(new_point)
+            dot_label.next_to(dot, UP+RIGHT)
+            slope_text.become(new_slope_text)
+            self.add(dot, dot_label, slope_text)
+            self.wait(1)
+
+        conclusion_text = Text('The slope of the tangent line represents the derivative at that point.', font_size=20, color=BLUE).to_edge(DOWN)
+        self.add(conclusion_text)
+        self.wait(3)
+
+        self.play(FadeOut(title), FadeOut(axes), FadeOut(graph), FadeOut(graph_label), FadeOut(dot), FadeOut(dot_label), FadeOut(tangent_line), FadeOut(slope_text), FadeOut(conclusion_text))
+        self.wait()
+
+
+2- neural network  yasir ka chat
+3- check simple de : simple
+4- uff- polar,vector,tessellation
+4- check- bouncing\
+ehh0 orbital
+surfac- surface revolution hai cone ka horizontal okok lytt jai
+
+"": {"""
+
+"""},

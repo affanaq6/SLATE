@@ -1,0 +1,3 @@
+# This file is used internally by FFMPEG.
+file 'file:D:/slate/media/videos/fine/1080p60/partial_movie_files/PieChartExample/3977891868_869709184_223132457.mp4'
+file 'file:D:/slate/media/videos/fine/1080p60/partial_movie_files/PieChartExample/2852726489_2999291583_1589165977.mp4'

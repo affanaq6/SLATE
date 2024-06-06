@@ -1,0 +1,6 @@
+# This file is used internally by FFMPEG.
+file 'file:D:/slate/media/videos/fine/1080p60/partial_movie_files/PolarCoordinates/3977891868_2471783054_223132457.mp4'
+file 'file:D:/slate/media/videos/fine/1080p60/partial_movie_files/PolarCoordinates/2852726489_3056767643_3267035297.mp4'
+file 'file:D:/slate/media/videos/fine/1080p60/partial_movie_files/PolarCoordinates/2852726489_229896448_3307888416.mp4'
+file 'file:D:/slate/media/videos/fine/1080p60/partial_movie_files/PolarCoordinates/2852726489_3314367293_569989984.mp4'
+file 'file:D:/slate/media/videos/fine/1080p60/partial_movie_files/PolarCoordinates/2852726489_2999291583_2423181893.mp4'

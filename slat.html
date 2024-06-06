@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falling Apple Animation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/2.5.0/p5.min.js"></script>
+</head>
+
+<body>
+    <script>
+        const p5 = new p5(); // Create a new p5 instance
+
+        let appleX, appleY, appleSize;
+        let gravityForce;
+        let handX, handY, handSize;
+
+        function setup() {
+            createCanvas(400, 400);
+            background(220);
+
+            // Initial apple position and size
+            appleX = width / 2;
+            appleY = 50;
+            appleSize = 20;
+
+            // Gravity strength
+            gravityForce = 0.5;
+
+            // Initial hand position and size based on apple
+            handX = appleX;
+            handY = appleY - appleSize * 3; // Adjust hand position relative to apple
+            handSize = appleSize * 2; // Adjust hand size relative to apple
+        }
+
+        function draw() {
+            // Translate canvas down by gravity force
+            translate(0, gravityForce);
+
+            // Draw apple
+            fill(255, 0, 0);
+            ellipse(appleX, appleY, appleSize, appleSize);
+
+            // Draw hand's fingers and arm
+            stroke(200, 150, 100); // Set hand color
+            strokeWeight(3); // Set hand line thickness
+            line(handX, handY, handX, handY + handSize); // Draw finger
+            line(handX, handY + handSize, handX + handSize / 3, handY + handSize * 2);
+            line(handX, handY + handSize, handX - handSize / 3, handY + handSize * 2);
+            arc(handX, handY - handSize / 2, handSize, handSize, 0, PI); // Draw curved arm
+
+            // Update apple position based on gravity
+            appleY += gravityForce;
+
+            // Check for apple reaching hand position
+            if (appleY >= handY - handSize) {
+                // Stop apple movement when it reaches the hand
+                gravityForce = 0;
+            }
+        }
+    </script>
+</body>
+
+</html>

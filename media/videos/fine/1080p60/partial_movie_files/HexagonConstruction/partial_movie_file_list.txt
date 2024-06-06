@@ -1,0 +1,7 @@
+# This file is used internally by FFMPEG.
+file 'file:D:/slate/media/videos/fine/1080p60/partial_movie_files/HexagonConstruction/3977891868_277603534_223132457.mp4'
+file 'file:D:/slate/media/videos/fine/1080p60/partial_movie_files/HexagonConstruction/2852726489_2263885585_331230358.mp4'
+file 'file:D:/slate/media/videos/fine/1080p60/partial_movie_files/HexagonConstruction/2852726489_308019934_3810073404.mp4'
+file 'file:D:/slate/media/videos/fine/1080p60/partial_movie_files/HexagonConstruction/2852726489_229896448_453855791.mp4'
+file 'file:D:/slate/media/videos/fine/1080p60/partial_movie_files/HexagonConstruction/2852726489_2666413886_1442234748.mp4'
+file 'file:D:/slate/media/videos/fine/1080p60/partial_movie_files/HexagonConstruction/2852726489_229896448_4125178951.mp4'

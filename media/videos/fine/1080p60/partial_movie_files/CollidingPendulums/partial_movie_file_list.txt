@@ -1,0 +1,4 @@
+# This file is used internally by FFMPEG.
+file 'file:D:/slate/media/videos/fine/1080p60/partial_movie_files/CollidingPendulums/3977891868_946100813_223132457.mp4'
+file 'file:D:/slate/media/videos/fine/1080p60/partial_movie_files/CollidingPendulums/2852726489_711656878_2003861675.mp4'
+file 'file:D:/slate/media/videos/fine/1080p60/partial_movie_files/CollidingPendulums/2852726489_229896448_3570130082.mp4'

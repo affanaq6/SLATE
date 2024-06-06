@@ -1,0 +1,5 @@
+# This file is used internally by FFMPEG.
+file 'file:D:/slate/media/videos/fine/1080p60/partial_movie_files/ExpandingCollapsingCircleGrid/3977891868_1371175075_2358810818.mp4'
+file 'file:D:/slate/media/videos/fine/1080p60/partial_movie_files/ExpandingCollapsingCircleGrid/2852726489_229896448_1245583576.mp4'
+file 'file:D:/slate/media/videos/fine/1080p60/partial_movie_files/ExpandingCollapsingCircleGrid/2852726489_1287930858_2566454100.mp4'
+file 'file:D:/slate/media/videos/fine/1080p60/partial_movie_files/ExpandingCollapsingCircleGrid/2852726489_229896448_3901894887.mp4'

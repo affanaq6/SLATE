@@ -1,0 +1,64 @@
+<!-- Include the Fetch API Polyfill for better browser support -->
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+
+<script>
+    let nlpOutput = ''; // Placeholder for NLP output
+    const apiKey = '<!-- Include the Fetch API Polyfill for better browser support -->
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+
+<script>
+  let nlpOutput = ''; // Placeholder for NLP output
+  const apiKey = 'zly1ylsawG9uTlD7ffmRu3ZH4p09W7dF'; // Replace with your actual OpenAI API key
+
+  // Function to make an API request to OpenAI GPT-3
+  async function performNLP(query) {
+    const apiUrl = 'https://api.apilayer.com/nlp/lang_detect'; // Replace with the correct API endpoint
+
+    try {
+      const response = await fetch(apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${apiKey}`,
+        },
+        body: JSON.stringify({
+          prompt: query,
+          max_tokens: 100,
+        }),
+      });
+
+      const data = await response.json();
+      if (data.choices && data.choices.length > 0) {
+        return data.choices[0].text.trim();
+      }
+      return '';
+    } catch (error) {
+      console.error('Error making API request:', error);
+      return '';
+    }
+  }
+
+  function setup() {
+    createCanvas(600, 400);
+    background(255);
+  }
+
+  async function draw() {
+    // Perform actual NLP processing
+    const userQuery = 'What is the water cycle?'; // Replace with user input
+    nlpOutput = await performNLP(userQuery);
+
+    // Draw animations based on NLP output
+    if (nlpOutput === 'water cycle') {
+      drawWaterCycleAnimation();
+    }
+  }
+
+  function drawWaterCycleAnimation() {
+    // Water Cycle Animation
+    background(255);
+
+    // Sun, Evaporation, Water Vapor, Cloud, Precipitation, Ground
+    // (The rest of the drawing code remains the same)
+  }
+</script>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLATE Project</title>
+</head>
+
+<body>
+
+    <canvas id="myCanvas" width="600" height="400" style="border:1px solid #000;"></canvas>
+
+    <script>
+        // Placeholder for NLP output
+        let nlpOutput = 'water cycle';
+
+        // Function to draw water cycle animation
+        function drawWaterCycleAnimation() {
+            // Get canvas context
+            const canvas = document.getElementById('myCanvas');
+            const ctx = canvas.getContext('2d');
+
+            // Water Cycle Animation
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw elements based on NLP output
+            if (nlpOutput === 'water cycle') {
+                // Sun
+                ctx.fillStyle = 'yellow';
+                ctx.beginPath();
+                ctx.arc(100, 100, 25, 0, 2 * Math.PI);
+                ctx.fill();
+
+                // Evaporation
+                ctx.fillStyle = 'lightblue';
+                ctx.fillRect(200, 50, 50, 100);
+
+                // Water Vapor
+                ctx.fillStyle = 'blue';
+                ctx.beginPath();
+                ctx.arc(225, 25, 10, 0, 2 * Math.PI);
+                ctx.fill();
+
+                // Cloud
+                ctx.fillStyle = 'grey';
+                ctx.beginPath();
+                ctx.arc(300, 50, 40, 0, 2 * Math.PI);
+                ctx.fill();
+
+                // Precipitation
+                ctx.fillStyle = 'darkblue';
+                ctx.fillRect(400, 50, 50, 100);
+
+                // Ground
+                ctx.fillStyle = 'brown';
+                ctx.fillRect(475, 50, 75, 100);
+            }
+        }
+
+        // Initial drawing
+        drawWaterCycleAnimation();
+    </script>
+
+</body>
+
+</html>

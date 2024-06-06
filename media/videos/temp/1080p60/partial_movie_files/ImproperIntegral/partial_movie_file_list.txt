@@ -1,0 +1,8 @@
+# This file is used internally by FFMPEG.
+file 'file:D:/slate/media/videos/temp/1080p60/partial_movie_files/ImproperIntegral/3977891868_2176902581_223132457.mp4'
+file 'file:D:/slate/media/videos/temp/1080p60/partial_movie_files/ImproperIntegral/2852726489_2109042293_378781179.mp4'
+file 'file:D:/slate/media/videos/temp/1080p60/partial_movie_files/ImproperIntegral/2852726489_494688698_1374533519.mp4'
+file 'file:D:/slate/media/videos/temp/1080p60/partial_movie_files/ImproperIntegral/2852726489_2608877905_3605536038.mp4'
+file 'file:D:/slate/media/videos/temp/1080p60/partial_movie_files/ImproperIntegral/2852726489_2999291583_1437575130.mp4'
+file 'file:D:/slate/media/videos/temp/1080p60/partial_movie_files/ImproperIntegral/2852726489_724396347_23606080.mp4'
+file 'file:D:/slate/media/videos/temp/1080p60/partial_movie_files/ImproperIntegral/2852726489_2999291583_610358451.mp4'

@@ -1,0 +1,10 @@
+[
+    {
+        "input_text": "show an animation of what a circle is?",
+        "output_text": "from manim import *\n\nclass DrawCircle(Scene):\n    def construct(self):\n        # Create a circle\n        circle = Circle()\n        # Set color and line width\n        circle.set_fill(PINK, opacity=0.5)\n        circle.set_stroke(color=WHITE, width=4)\n\n        # Show creation of the circle\n        self.play(Create(circle))\n        self.wait(1)"
+    },
+    {
+        "input_text": "show an animation of a square?",
+        "output_text": "from manim import *\n\nclass DrawSquare(Scene):\n    def construct(self):\n        # Create a square\n        square = Square()\n        # Set color and line width\n        square.set_fill(BLUE, opacity=0.5)\n        square.set_stroke(color=WHITE, width=4)\n\n        # Show creation of the square\n        self.play(Create(square))\n        self.wait(1)"
+    }
+]
